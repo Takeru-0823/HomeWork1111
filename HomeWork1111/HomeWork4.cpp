@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-void swap_ptr(char* pStr1, char* pStr2);
+void swap_ptr(char*& pStr1, char*& pStr2);
 
 int main()
 {
@@ -13,11 +13,14 @@ int main()
 
 	swap_ptr(pStr1, pStr2);
 
-	cout << pStr1 << endl;
-	cout << pStr2 << endl;
+	cout << pStr1 << endl
+	     << pStr2 << endl;
 }
 
-void swap_ptr(char* pStr1, char* pStr2)
+void swap_ptr(char*& pStr1, char*& pStr2)
 {
+	char* swap = pStr1;
+	pStr1 = pStr2;
+	pStr2 = swap;
 
 }
