@@ -28,7 +28,6 @@ double str2int(const char* s)
 		{
 			decimal = true;
 			index1++;
-			continue;
 		}
 
 		if (s[index1] == number[index2])
