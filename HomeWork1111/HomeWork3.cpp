@@ -51,7 +51,7 @@ double str2int(const char* s)
 
 		if (number[index2] == '\0')
 		{
-			return 0;
+			return 0.0;
 		}
 	}
 
