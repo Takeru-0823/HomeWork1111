@@ -7,8 +7,8 @@ void swap_string(char* s1, char* s2);
 
 int main()
 {
-    char p[] = "ABCDEF";
-    char q[] = "XYZ";
+    char p[100] = "ABCDEF";
+    char q[100] = "XYZ";
 
     swap_string(p, q);
 
@@ -19,12 +19,14 @@ int main()
 void swap_string(char* s1, char* s2)
 {
     int len = strlen(s1);
+ 
+    char* array = new char[len + 1];
 
-    char array[100];
-
-    strcpy(array,s1);
+    strcpy(array, s1);
     strcpy(s1, s2);
     strcpy(s2, array);
+
+    delete[] array;
 
 }
 
