@@ -17,7 +17,7 @@ double str2int(const char* s)
 	double answer = 0;
 	int index1 = 0;
 	int index2 = 0;
-	int disit = 1;
+	int disit = 10;
 	bool decimal = false;
 	int few = 0;
 	char number[] = "0123456789";
@@ -43,10 +43,6 @@ double str2int(const char* s)
 				few++;
 			}
 
-			if (disit == 1)
-			{
-				disit = 10;
-			}
 		}
 		else
 		{
