@@ -17,7 +17,7 @@ int str2int(const char* s)
 	int answer = 0;
 	int index1 = 0;
 	int index2 = 0;
-	int disit = 1;
+	int disit = 10;
 	char number[] = "0123456789";
 
 	while (s[index1] != '\0')
@@ -29,10 +29,6 @@ int str2int(const char* s)
 			index1++;
 			index2 = 0;
 
-			if (disit == 1)
-			{
-				disit = 10;
-			}
 		}
 		else
 		{
